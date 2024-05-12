@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/addNoteHeding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#8F9FAC"
+        android:fontFamily="@font/audiowide"
+        android:text="Add Task.."
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/updatesaveButton"
+        android:layout_width="31dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/addNoteHeding"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="666dp"
+        android:backgroundTint="#266EA7"
+        android:foregroundTint="#1C1C1C"
+        android:src="@drawable/correctmrk" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/addNoteHeding"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/orange_border"
+        android:hint="Enter The Title"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:shadowColor="#BC2424"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D8D8D8"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="385dp"
+        android:layout_height="447dp"
+        android:layout_below="@+id/titleEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:gravity="top"
+        android:hint="Enter the Description"
+        android:padding="12dp"
+        android:textColorHint="#D8D8D8"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:hint="Select Time"
+        android:inputType="none"
+        android:padding="12dp"
+        android:textColorHint="#D8D8D8"
+        android:textSize="18sp"
+        android:editable="false" />
+
+    <Button
+        android:id="@+id/selectTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/timeEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="26dp"
+        android:text="Select Time" />
+
+</RelativeLayout>

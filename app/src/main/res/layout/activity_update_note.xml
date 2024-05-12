@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateNoteActivity">
+
+    <TextView
+        android:id="@+id/editNoteHeding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Update Task.."
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/updatesaveButton"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/editNoteHeding"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="53dp"
+        android:src="@drawable/updatemark" />
+
+    <EditText
+        android:id="@+id/updatetitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/editNoteHeding"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/orange_border"
+        android:hint="Enter The Title"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D8D8D8"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/updatecontentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/updatetitleEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:gravity="top"
+        android:hint="Enter the Description"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D8D8D8"
+        android:textSize="18sp" />
+
+</RelativeLayout>
